@@ -127,10 +127,12 @@ module.exports = function(grunt){
  grunt.loadNpmTasks('grunt-contrib-htmlmin');
  grunt.loadNpmTasks('grunt-contrib-watch');
  grunt.loadNpmTasks('grunt-contrib-jshint');
+ grunt.loadNpmTasks('grunt-git');
  grunt.registerTask('default', [
     'concat',
     'uglify',
     'cssmin',
-    'autoprefixer'
+    'autoprefixer',
+    'grunt-git'
   ]);
 };
